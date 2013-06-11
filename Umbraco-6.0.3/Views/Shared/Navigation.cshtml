@@ -1,0 +1,12 @@
+@using UmbracoTest.Web.Extensions
+@using Umbraco.Web.Macros
+@inherits PartialViewMacroPage
+
+<ul>
+@foreach (var page in Model.Content.Children)
+{
+    var pageTitle = page.HasValue("pageTitle") ? page.GetPropertyValue<string>("pageTitle") : page.Name;
+     
+	<li>@Html.RenderLinkTag(new HtmlString(pageTitle), @page.Url)</li>
+}
+</ul>

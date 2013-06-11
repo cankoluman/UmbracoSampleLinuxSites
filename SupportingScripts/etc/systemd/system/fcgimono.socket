@@ -1,0 +1,8 @@
+[Unit]
+Description=fcgi mono socket
+
+[Socket]
+ListenStream=/tmp/fcgimono.sock
+Accept=false
+
+

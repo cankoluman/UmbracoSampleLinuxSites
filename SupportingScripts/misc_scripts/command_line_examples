@@ -1,0 +1,32 @@
+#######################################################
+#######################################################
+
+# mono fcgi server
+fastcgi-mono-server4 /applications=*:<port>:/:<path-to-app> /socket=tcp:127.0.0.1:9000 /verbose=true
+fastcgi-mono-server4 /applications=*:<port>:/:<path-to-app> /socket=unix:<path-to-socket-file> /verbose=true
+
+
+#######################################################
+#######################################################
+
+# tips for building mono develop
+cd monodevelop
+./configure
+make 
+find -name '*.csproj' -print -exec sed -i.bak 's/<SpecificVersion>False<\/SpecificVersion>/<SpecificVersion>True<\/SpecificVersion>/g' {} \;
+#find -name '*.csproj' -print -exec sed -i.bak 's/Net_2_0/Net_4_0/g' {} \;
+./configure --prefix=/opt/mono
+make
+sudo make install
+#switch to mono 3 environment
+(batch file to set variables)
+make
+sudo make install
+
+#this also seems to work
+find -name '*.csproj' -print -exec sed -i.bak 's/<SpecificVersion>False<\/SpecificVersion>//g' {} \;
+
+
+#######################################################
+#######################################################
+

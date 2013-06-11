@@ -1,0 +1,17 @@
+﻿@using UmbracoTest.Web.Extensions
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "PageBase.cshtml";
+}
+
+@section Common
+{
+	<h2>@Umbraco.Field("pageTitle")</h2>
+}
+
+@Umbraco.Field("bodyText")
+<hr />
+<div>
+@{Html.RenderAction("RenderForm", "ImageSurface");}
+</div>	
+<hr />

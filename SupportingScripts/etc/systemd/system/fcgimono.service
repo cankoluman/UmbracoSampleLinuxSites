@@ -1,0 +1,14 @@
+[Unit]
+Description=Mono fcgi Server
+Before=nginx.service
+After=nss-user-lookup.target
+
+[Service]
+EnvironmentFile=-/opt/mono/etc/mono_dev-env
+Type=simple
+ExecStart=/opt/mono/bin/fastcgi-mono-server4 /applications=*:8083:/:/home/kol3/Sites/Umbraco-6.0.3 /socket=unix:/tmp/fcgimono.sock /verbose=true
+User=http
+Group=http
+
+[Install]
+WantedBy=multi-user.target
