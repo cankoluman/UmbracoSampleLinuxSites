@@ -2,19 +2,22 @@
 
 ### BEGIN INIT INFO
 # Provides:          monoserve.sh
-# Required-Start:    $local_fs $syslog $remote_fs
-# Required-Stop:     $local_fs $syslog $remote_fs
+# Required-Start:    $local_fs $syslog $remote_fs $nginx
+# Required-Stop:     $local_fs $syslog $remote_fs $nginx
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
 # Short-Description: Start fastcgi mono server with hosts
 ### END INIT INFO
 
-PATH=/opt:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-DAEMON=/opt/bin/mono
-NAME=monoserver
-DESC=monoserver
+#if using a different mono environment
+#[ -f <path to environment file> ] && . <path to environment file>
 
-MONOSERVER=$(which /opt/mono/bin/fastcgi-mono-server4)
+if [ -z "$MONO_PREFIX" ] ;  then
+  echo "MONO_PREFIX is not set, please set it in /etc/default/monoserver" >&2
+  exit 1
+fi
+
+MONOSERVER=$(which fastcgi-mono-server4)
 MONOSERVER_PID=$(ps auxf | grep fastcgi-mono-server4.exe | grep -v grep | awk '{print $2}')
 
 WEBAPPS="*:<port>/:<app-filesystem-path>"
@@ -22,7 +25,7 @@ WEBAPPS="*:<port>/:<app-filesystem-path>"
 case "$1" in
         start)
                 if [ -z "${MONOSERVER_PID}" ]; then
-                        echo "starting mono server"
+                        echo "starting mono server: ${MONOSERVER}"
                         ${MONOSERVER} /applications=${WEBAPPS} /socket=tcp:127.0.0.1:9000 &
                         echo "mono server started"
                 else

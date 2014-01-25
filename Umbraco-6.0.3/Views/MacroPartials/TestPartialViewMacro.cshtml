@@ -1,8 +1,0 @@
-@inherits Umbraco.Web.Macros.PartialViewMacroPage
-	
-<div>Page: @Model.Content.Name</div>
-	
-@foreach(var child in Model.Content.Children)
-{
-	<a href="@child.Url">@child.Name</a><text> </text>
-}	
