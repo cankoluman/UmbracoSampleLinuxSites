@@ -1,0 +1,34 @@
+@using UmbracoTest.Web.Extensions
+@using Umbraco.Web.Macros
+@inherits PartialViewMacroPage
+
+@{
+    var pagePath = Model.Content.Path
+                    .Split(new []{','})
+                    .ToList()
+                    .Where(item => int.Parse(item) > 0)
+                    .Select(item =>
+                    {
+                        var page = Umbraco.TypedContent(item);
+                        return page;
+                    });
+    
+    <span id="breadcrumb">                    
+        @foreach (var page in pagePath)
+        {
+            var pageTitle = page.HasValue("pageTitle") ? page.GetPropertyValue<string>("pageTitle") : page.Name;
+
+            if (page.Id == Model.Content.Id)
+            {
+                @Html.Raw(pageTitle)
+            }
+            else
+            {
+                @Html.RenderLinkTag(new HtmlString(pageTitle), page.Url)
+            }
+            
+            if (page.Id != pagePath.Last().Id)
+            { @Html.Raw(" &raquo; ") }
+        }  
+    </span>                  
+}
