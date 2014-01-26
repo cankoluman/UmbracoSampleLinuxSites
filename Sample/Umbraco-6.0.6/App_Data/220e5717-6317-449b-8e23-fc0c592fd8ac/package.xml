@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+
+  <info>
+    <package>
+      <name>Examine Inspector</name>
+      <version>1.1.2</version>
+      <license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+      <url>www.thecogworks.co.uk</url>
+      <requirements>
+        <major>4</major>
+        <minor>8</minor>
+        <patch>0</patch>
+      </requirements>
+    </package>
+    <author>
+      <name>Ismail Mayat</name>
+      <website>www.thecogworks.co.uk</website>
+    </author>
+    <readme><![CDATA[This package will install one dll and new folder in usercontrols. It will also update your dashboard.config. 
+After installing in the developer section you will see new dashboard to query your examine indexes.]]></readme>
+  </info>
+  <DocumentTypes />
+  <Templates />
+  <Stylesheets />
+  <Macros />
+  <DictionaryItems />
+  <Languages />
+  <DataTypes />
+  <files><file><guid>65e4e4b2-b5bf-4cd9-b386-0c53aef48db2.dll</guid><orgPath>/bin</orgPath><orgName>ExamineInspector.dll</orgName></file><file><guid>94df73c9-8b62-45db-bc8b-6bf3dcc1010b.ashx</guid><orgPath>/Umbraco/Plugins/ExamineInspector</orgPath><orgName>BackUpFileStreamer.ashx</orgName></file><file><guid>23d627c1-86c7-4726-bd80-968f6583e20f.css</guid><orgPath>/Umbraco/Plugins/ExamineInspector/css</orgPath><orgName>bootstrap.css</orgName></file><file><guid>3a73151d-e467-4fe0-a359-882f61d76ca5.css</guid><orgPath>/Umbraco/Plugins/ExamineInspector/css</orgPath><orgName>bootstrap.min.css</orgName></file><file><guid>2a413795-b9fc-44c7-a152-e11ad861b9c2.css</guid><orgPath>/Umbraco/Plugins/ExamineInspector/css</orgPath><orgName>examineInspector.css</orgName></file><file><guid>f5803f36-70ae-4ba2-89a9-ccdbd6d5ff12.png</guid><orgPath>/Umbraco/Plugins/ExamineInspector/css/smoothness/images</orgPath><orgName>ui-bg_flat_0_aaaaaa_40x100.png</orgName></file><file><guid>dff145ff-32a6-46e0-9041-eab4ede0110b.png</guid><orgPath>/Umbraco/Plugins/ExamineInspector/css/smoothness/images</orgPath><orgName>ui-bg_flat_75_ffffff_40x100.png</orgName></file><file><guid>04668467-c4b1-4f2a-8a78-50c84c23c7cf.png</guid><orgPath>/Umbraco/Plugins/ExamineInspector/css/smoothness/images</orgPath><orgName>ui-bg_glass_55_fbf9ee_1x400.png</orgName></file><file><guid>ed835049-903a-41b3-b5f0-c9e9f21e85ed.png</guid><orgPath>/Umbraco/Plugins/ExamineInspector/css/smoothness/images</orgPath><orgName>ui-bg_glass_65_ffffff_1x400.png</orgName></file><file><guid>9e499dba-2985-4773-a08b-915588caaeaf.png</guid><orgPath>/Umbraco/Plugins/ExamineInspector/css/smoothness/images</orgPath><orgName>ui-bg_glass_75_dadada_1x400.png</orgName></file><file><guid>2a3aee3d-150c-4b54-b3bd-810729c464ee.png</guid><orgPath>/Umbraco/Plugins/ExamineInspector/css/smoothness/images</orgPath><orgName>ui-bg_glass_75_e6e6e6_1x400.png</orgName></file><file><guid>94885cc6-2a7f-47e1-96e4-f515e8f62023.png</guid><orgPath>/Umbraco/Plugins/ExamineInspector/css/smoothness/images</orgPath><orgName>ui-bg_glass_95_fef1ec_1x400.png</orgName></file><file><guid>90b88881-216e-464e-9501-2a980cf3b2e8.png</guid><orgPath>/Umbraco/Plugins/ExamineInspector/css/smoothness/images</orgPath><orgName>ui-bg_highlight-soft_75_cccccc_1x100.png</orgName></file><file><guid>6bf7c9b8-b307-42d2-9e7b-8ee3e5af32c3.png</guid><orgPath>/Umbraco/Plugins/ExamineInspector/css/smoothness/images</orgPath><orgName>ui-icons_222222_256x240.png</orgName></file><file><guid>36803d66-7f53-491e-89a9-b12b62cacdba.png</guid><orgPath>/Umbraco/Plugins/ExamineInspector/css/smoothness/images</orgPath><orgName>ui-icons_2e83ff_256x240.png</orgName></file><file><guid>83b628fc-0e47-416a-a8a2-1d37057ddf36.png</guid><orgPath>/Umbraco/Plugins/ExamineInspector/css/smoothness/images</orgPath><orgName>ui-icons_454545_256x240.png</orgName></file><file><guid>f28455ac-e915-4ab3-8353-4d3720849115.png</guid><orgPath>/Umbraco/Plugins/ExamineInspector/css/smoothness/images</orgPath><orgName>ui-icons_888888_256x240.png</orgName></file><file><guid>526cc1a6-de4c-43d5-9d62-7202952f5305.png</guid><orgPath>/Umbraco/Plugins/ExamineInspector/css/smoothness/images</orgPath><orgName>ui-icons_cd0a0a_256x240.png</orgName></file><file><guid>290834bb-68c0-4443-97f3-cf923e24a36a.css</guid><orgPath>/Umbraco/Plugins/ExamineInspector/css/smoothness</orgPath><orgName>jquery-ui-1.10.0.custom.css</orgName></file><file><guid>c8036180-fc71-4032-a01f-1d2c55296f21.css</guid><orgPath>/Umbraco/Plugins/ExamineInspector/css/smoothness</orgPath><orgName>jquery-ui-1.10.0.custom.min.css</orgName></file><file><guid>fa8fcd07-e9ae-412d-9c2e-7d465e0cabfa.aspx</guid><orgPath>/Umbraco/Plugins/ExamineInspector</orgPath><orgName>default.aspx</orgName></file><file><guid>5a33da46-8b60-4e2c-8dd2-906fed31c355.ascx</guid><orgPath>/Umbraco/Plugins/ExamineInspector</orgPath><orgName>DocFields.ascx</orgName></file><file><guid>5361807f-c694-4bff-821f-bb82e03f5e56.aspx</guid><orgPath>/Umbraco/Plugins/ExamineInspector</orgPath><orgName>DocumentFields.aspx</orgName></file><file><guid>7fc2caef-45be-4f92-ab1a-f5fa6b6922c1.ascx</guid><orgPath>/Umbraco/Plugins/ExamineInspector</orgPath><orgName>ExamineInspectorContent.ascx</orgName></file><file><guid>08367a5d-19b2-4a6c-b2a1-b82cfcc65628.ascx</guid><orgPath>/Umbraco/Plugins/ExamineInspector</orgPath><orgName>ExamineInspectorDashboard.ascx</orgName></file><file><guid>bc75add5-ad16-41bc-986f-246140cf10df.html</guid><orgPath>/Umbraco/Plugins/ExamineInspector/help</orgPath><orgName>analyzers.html</orgName></file><file><guid>cec3d5f1-b17e-4e53-9561-5ffd796a3edb.html</guid><orgPath>/Umbraco/Plugins/ExamineInspector/help</orgPath><orgName>syntax.html</orgName></file><file><guid>19bc2e69-3b65-4f36-9c4e-3327f95128f9.png</guid><orgPath>/Umbraco/Plugins/ExamineInspector/images</orgPath><orgName>close.png</orgName></file><file><guid>b5d9d68c-025d-4948-aea3-301e0f4cc508.png</guid><orgPath>/Umbraco/Plugins/ExamineInspector/images</orgPath><orgName>cogworks-logo.png</orgName></file><file><guid>08f49724-4649-4f70-907a-61a5a51e9437.png</guid><orgPath>/Umbraco/Plugins/ExamineInspector/images</orgPath><orgName>glyphicons-halflings-white.png</orgName></file><file><guid>8e91b94a-c9b8-4f9a-9d95-18bfdd3d088c.png</guid><orgPath>/Umbraco/Plugins/ExamineInspector/images</orgPath><orgName>glyphicons-halflings.png</orgName></file><file><guid>6a48ba1d-6ea2-4bfb-aa92-d77de931c66b.png</guid><orgPath>/Umbraco/Plugins/ExamineInspector/images</orgPath><orgName>help.png</orgName></file><file><guid>e9dd234e-49e1-4065-950f-b8cb01993aa9.gif</guid><orgPath>/Umbraco/Plugins/ExamineInspector/images</orgPath><orgName>minus.gif</orgName></file><file><guid>8d327600-4dd9-479b-8355-cee7e063981d.gif</guid><orgPath>/Umbraco/Plugins/ExamineInspector/images</orgPath><orgName>plus.gif</orgName></file><file><guid>f303f8a4-1fe7-4ebc-8114-5681b9c6cfd0.png</guid><orgPath>/Umbraco/Plugins/ExamineInspector/images</orgPath><orgName>transparent.png</orgName></file><file><guid>4ddf48e7-9bd9-4ac6-84db-566d47ef1aef.ascx</guid><orgPath>/Umbraco/Plugins/ExamineInspector</orgPath><orgName>Pager.ascx</orgName></file><file><guid>20f24ce4-773f-4f60-82b3-ecce1467e7c8.js</guid><orgPath>/Umbraco/Plugins/ExamineInspector/scripts</orgPath><orgName>bootstrap.js</orgName></file><file><guid>cb369190-cca7-4895-98bf-7ad5018c5710.js</guid><orgPath>/Umbraco/Plugins/ExamineInspector/scripts</orgPath><orgName>bootstrap.min.js</orgName></file><file><guid>6689c296-7ec9-413b-b5a1-76d59fc44a9b.js</guid><orgPath>/Umbraco/Plugins/ExamineInspector/scripts</orgPath><orgName>examineInspector.js</orgName></file><file><guid>b2720c90-ff02-4473-9f53-0b0549323b52.js</guid><orgPath>/Umbraco/Plugins/ExamineInspector/scripts</orgPath><orgName>jquery.ba-resize.min.js</orgName></file><file><guid>daa3e4ef-5190-4823-9a00-8ae5aa65e869.js</guid><orgPath>/Umbraco/Plugins/ExamineInspector/scripts</orgPath><orgName>jquery.cookie.js</orgName></file><file><guid>b9a1b229-f22d-4214-85e1-5474f7926851.ascx</guid><orgPath>/Umbraco/Plugins/ExamineInspector</orgPath><orgName>SearchResults.ascx</orgName></file><file><guid>e8664be5-47e7-4864-8c5c-1bda54614ddf.ascx</guid><orgPath>/Umbraco/Plugins/ExamineInspector</orgPath><orgName>TopTerms.ascx</orgName></file></files>
+  
+  <Actions>
+    <!-- add dashboard -->
+    <Action runat="install" alias="addDashboardSection" dashboardAlias="ExamineInspector">
+      <section>
+        <areas>
+          <area>developer</area>
+        </areas>
+        <tab caption="Examine inspector">
+          <control>/umbraco/plugins/ExamineInspector/ExamineInspectorDashboard.ascx</control>
+        </tab>
+      </section>
+    </Action>
+  </Actions>
+</umbPackage>
